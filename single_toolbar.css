@@ -1,0 +1,24 @@
+/**
+ * @file single_toolbar.css
+ * Make admin_menu responsive
+ */
+
+#admin-menu {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+#admin-menu.hide-bar {
+  display: none;
+}
+
+@media all and (max-width: 980px) {
+  #admin-menu-account { display: none; }
+  #admin-menu li a { font-size: 9px !important; padding: 4px !important; }
+}
+
+@media all and (max-width: 500px) {
+  #admin-menu { display: none; }
+  body.admin-menu { margin-top: 0 !important; }
+}

@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file single_toolbar.module
+ */
+
+
+/**
+ * Implements hook_page_alter().
+ */
+function single_toolbar_page_alter(&$page) {
+  if (!user_access('access administration menu')) return;
+
+  foreach (array('toolbar', 'navbar') as $toolbar) {
+    if (!empty($page['page_top'][$toolbar])) {
+      $page['page_top'][$toolbar]['#access'] = FALSE;
+    }
+  }
+  drupal_add_css(drupal_get_path('module', 'single_toolbar') . '/single_toolbar.css');
+}
+

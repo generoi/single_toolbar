@@ -1,0 +1,5 @@
+name = Single toolbar
+description = Remove duplicate toolbars
+dependencies[] = admin_menu
+package = custom
+core = 7.x
