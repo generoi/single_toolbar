@@ -8,17 +8,25 @@
   -moz-box-shadow: none !important;
   box-shadow: none !important;
 }
+html body.admin-menu {
+  margin-top: 0 !important;
+  padding-top: 29px !important;
+}
 
 #admin-menu.hide-bar {
   display: none;
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 1050px) {
   #admin-menu-account { display: none; }
+}
+@media all and (max-width: 980px) {
   #admin-menu li a { font-size: 9px !important; padding: 4px !important; }
 }
 
-@media all and (max-width: 500px) {
-  #admin-menu { display: none; }
-  body.admin-menu { margin-top: 0 !important; }
+@media all and (max-width: 650px) {
+  #admin-menu-icon,
+  #admin-menu-menu,
+  #admin-menu-account,
+  #admin-menu-users { display: none; }
 }
