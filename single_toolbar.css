@@ -30,3 +30,10 @@ html body.admin-menu {
   #admin-menu-account,
   #admin-menu-users { display: none; }
 }
+
+/* adminimal menu styles the search input according to content-box */
+body.adminimal-menu #admin-menu .admin-menu-search input {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+}
